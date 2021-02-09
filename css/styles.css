@@ -19,7 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    background: #fff;
+    position: fixed;
+    z-index: 9999;
 }
 
 .nav-bar__logo {
@@ -171,4 +173,80 @@
 
 .green-tick .fa-check {
     color: var(--green);
+    font-size: 0.6em;
+}
+
+
+@media (min-width: 800px) {
+
+    .nav-bar {
+        height: 11vh;
+        padding: 0 80px;
+        transform: translateY(-11vh);
+
+    }
+
+    .slider-conteiner{
+        height: 90vh;
+        padding: 0 80px;
+        margin-top: 11vh;
+    }
+
+    .slider__tittle {
+        font-size: 5em;
+        width: 70%;
+    }
+
+    .button {
+        width: 18vw;
+    }
+
+    .about-us-container {
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 80px;
+    }
+
+    .tittle {
+        font-size: 2.5em;
+    }
+
+    .paragraph {
+        letter-spacing: 1px;
+
+    }
+
+    .simple-image {
+        width: 40vw;
+        height: 35vw;
+        margin: 0 50px;
+    }
+
+    .what-we-do-container {
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 80px;
+        background: #fff;
+    }
+
+    .what-we-do__info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .list-container {
+        margin: 30px 0;
+        flex-grow: 0.5;
+    }
+
+    .list__item {
+        margin: 7px 0px;
+    }
+
+
+
+
 }
